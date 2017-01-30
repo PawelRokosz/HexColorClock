@@ -19,7 +19,12 @@ function changeTime(){
     seconds = '0' + seconds;
   }
 
-  clock.textContent = hours + ' : ' + minutes + ' . ' + seconds;
+  var clockString = hours + ' : ' + minutes + ' . ' + seconds;
+  var hexColorString = '#' + hours + minutes + seconds;
+
+  clock.textContent = clockString;
+  hexColor.textContent = hexColorString;
+
 }
 
 changeTime();
