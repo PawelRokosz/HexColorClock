@@ -19,7 +19,7 @@ function changeTime(){
     seconds = '0' + seconds;
   }
 
-  var clockString = hours + ' : ' + minutes + ' . ' + seconds;
+  var clockString = hours + ' : ' + minutes + ' : ' + seconds;
   var hexColorString = '#' + hours + minutes + seconds;
 
   clock.textContent = clockString;
