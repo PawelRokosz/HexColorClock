@@ -3,7 +3,23 @@ var hexColor = document.querySelector('#hex-color');
 
 function changeTime(){
   var time = new Date();
-  clock.textContent = time.getHours() + ' : ' + time.getMinutes() + ' . ' + time.getSeconds();
+  var hours = time.getHours().toString();
+  var minutes = time.getMinutes().toString();
+  var seconds = time.getSeconds().toString();
+
+  if(hours.length < 2){
+    hours = '0' + hours;
+  }
+
+  if(minutes.length < 2){
+    minutes = '0' + minutes;
+  }
+
+  if(seconds.length < 2){
+    seconds = '0' + seconds;
+  }
+
+  clock.textContent = hours + ' : ' + minutes + ' . ' + seconds;
 }
 
 changeTime();
