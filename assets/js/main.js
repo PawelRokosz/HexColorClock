@@ -25,6 +25,8 @@ function changeTime(){
   clock.textContent = clockString;
   hexColor.textContent = hexColorString;
 
+  document.body.style.backgroundColor = 'red';
+
 }
 
 changeTime();
